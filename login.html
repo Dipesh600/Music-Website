@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Explain</title>
+    
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="flex">
+            <section>
+                <h1>Motivate Your Hidden side With Us</h1>
+                <p>"You can't connect the dots looking forward; you can only <br> connect them looking backward. So you have to trust that <br> the dots will somehow connect in your future. You have to <br> trust in something -- your gut, destiny, life, karma, whatever. <br> This approach has never let me down, and it has made all <br> the difference in my life." </p>
+                <h3>So Stay Motivated</h3>
+
+            </section>
+           
+        <div class="form">
+            <div class="button">
+                <div id="btn"></div>
+                <button type='button' class="toggle" onclick="login()">Log In</button>
+                <button type='button' class="toggle" onclick="register()">Register</button>
+
+            </div>
+            <div class="social-icons">
+                <a href="http://www.facebook.com"><img src="fb.png" alt="Facebook ">
+                </a>
+                <a href="http://www.instagram.com">                <img src="gp.png" alt="Instagram">
+                </a>
+                <a href="http://www.twitter.com">                <img src="tw.png" alt="Twitter">
+                </a>
+            </div>
+            <form id="log-in" class="inp-grp">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="smt-btn">Log In</button>
+            </form>
+
+            <form id="register" class="inp-grp">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
+                <button type="submit" class="smt-btn">Register</button>
+
+
+
+            </form>
+        </div>
+
+        </div>
+        
+
+    </div>
+    <script>
+        var x=document.getElementById('log-in');
+        var y=document.getElementById("register")
+        var z=document.getElementById("btn")
+
+        function register(){
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px'
+        }
+        function login(){
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0'
+        }
+
+
+    </script>
+</body>
+</html>
